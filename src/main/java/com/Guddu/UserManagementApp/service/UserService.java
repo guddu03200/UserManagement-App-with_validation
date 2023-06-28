@@ -62,14 +62,14 @@ public class UserService {
         return "User with the "+iD+" Not found";
     }
 
-    public String updateUserAddress(Integer iD, String address) {
+    public String updateUserEmailAddress(Integer iD, String email) {
         List<User> users = getAllUser();
 
         for(User i:users)
         {
             if(iD.equals(i.getUserId()))
             {
-                i.setUserAddress(address);
+                i.setUserEmail(email);
                 return "User's Address Updated. ";
             }
         }

@@ -9,13 +9,10 @@ import java.util.List;
 
 @Configuration
 public class BeanManager {
+
     @Bean
-    public List<User> getInitializedList()
-    {
+    public List<User> getUsers(){
 
-        List<User> initList = new ArrayList<>();
-
-
-        return initList;
+        return new ArrayList<>();
     }
 }
